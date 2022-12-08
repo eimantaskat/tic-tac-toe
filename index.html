@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/e1977a1fe2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.cdnfonts.com/css/grunge-2" rel="stylesheet">
+    <title>Tic tac toe</title>
+</head>
+<body>
+    <div class="players">
+        <div class="player">
+            <img src="images/x/1.png">
+            <h2 id="player1" contenteditable="true"></h2>
+            <i class="fa-solid fa-pen"></i>
+            <h2 id="player1-score" class="score">
+                <span class="red">0</span>
+                <i class="fa-solid fa-trophy gold"></i>
+            </h2>
+        </div>
+        <div class="player">
+            <img src="images/o/1.png">
+            <h2 id="player2" contenteditable="true"></h2>
+            <i class="fa-solid fa-pen"></i>
+            <h2 id="player2-score" class="score">
+                <span class="blue">0</span>
+                <i class="fa-solid fa-trophy gold"></i>
+            </h2>
+        </div>
+    </div>
+    <div class="info">
+        <div class="next-turn">
+            <img src="images/x/1.png">
+            <h2 class="info-text">Starts</h2>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="box0 odd"></div>
+        <div class="box1 even"></div>
+        <div class="box2 odd"></div>
+        <div class="box3 even"></div>
+        <div class="box4 odd"></div>
+        <div class="box5 even"></div>
+        <div class="box6 odd"></div>
+        <div class="box7 even"></div>
+        <div class="box8 odd"></div>
+    </div>
+    <div class="info">
+        <h2 id="reset" class="hover-red">RESET</h2>
+    </div>
+    <div class="game-over hidden">
+        <h2 id="winner"></h2>
+        <img src="">
+        <h1></h1>
+        <div class="play-again">PLAY AGAIN</div>
+    </div>
+    <footer>
+        <script src="scripts/main.js"></script>
+    </footer>
+</body>
+</html>
