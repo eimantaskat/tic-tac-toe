@@ -47,6 +47,7 @@ body {
     height: 40vh;
     cursor: pointer;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .grid div {
     position: relative;
@@ -137,6 +138,8 @@ body {
 .players {
     align-items: center;
     margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 0;
 }
 .players img {
     height: 2rem;
@@ -182,7 +185,8 @@ body {
 }
 
 #reset {
-    text-align: center;
+    margin-top: 0;
+    text-align: left;
     cursor: pointer;
 }
 
@@ -199,6 +203,10 @@ body {
 }
 .bottom {
     bottom: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
 }
 
 /* COLORS */
@@ -257,9 +265,23 @@ body {
 }
 
 @media screen and (max-height: 500px) {
-    body {
-        display: flex;
+    .players {
+        width: fit-content;
     }
+    .grid {
+        height: 90vh;
+        width: 90vh;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .score {
+        margin-left: auto !important;
+        margin-right: 0% !important;
+    }
+}
+
+@media screen and (max-height: 500px) and (max-width: 1050px) {
     .players {
         width: fit-content;
     }
